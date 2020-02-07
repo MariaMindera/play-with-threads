@@ -1,5 +1,8 @@
 package com.mindera.school;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Calculator {
     private int max;
 
@@ -8,21 +11,18 @@ public class Calculator {
     }
 
     public String getResult() {
-        StringBuilder resultBuilder = new StringBuilder();
+        List<String> list = new ArrayList<>();
 
         int x = 0, y = 1, z;
 
         for (int i = 0; i < max; i++) {
-            resultBuilder.append(x);
-            resultBuilder.append(",");
-
+            list.add(String.valueOf(x));
             z = y + x;
             x = y;
             y = z;
         }
 
-        resultBuilder.deleteCharAt(max * 2 - 1);
-
-        return String.valueOf(resultBuilder);
+        return String.join(",", list);
     }
 }
+
