@@ -21,7 +21,6 @@ public class Calculator {
             x = y;
             y = z;
         }
-
         return String.join(",", list);
     }
 }
