@@ -2,16 +2,18 @@
 
 ## First Exercise 
 Classes: 
-  - CalculateThread.java
-  - Calculator.java
-  - FibonacciCalculator.java
-<br />
-Test: FibonacciCalculatorTest.java 
+  + CalculateThread.java
+  + Calculator.java
+  + FibonacciCalculator.java
+  
+Test: 
+  + FibonacciCalculatorTest.java 
 
 ## Second Exercise with Callable 
 Classes: 
-  - CalculateThread2.java
-  - Calculator.java
-  - FibonacciCalculator2.java
-<br />
-Tes: FibonacciCalculatorTest2.java
+  + CalculateThread2.java
+  + Calculator.java
+  + FibonacciCalculator2.java
+  
+Test: 
+  + FibonacciCalculatorTest2.java
