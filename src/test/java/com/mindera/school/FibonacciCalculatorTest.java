@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FibonacciCalculatorTest {
 
@@ -17,12 +17,12 @@ class FibonacciCalculatorTest {
     }
 
     @Test
-    void highestFibonacci() {
+    void highestFibonacci() throws InterruptedException {
         assertEquals("0,1,1,2,3", fibonacciCalculator.fibonacciSequence(5));
     }
 
     @Test
-    void fibonacciSequence() {
+    void fibonacciSequence() throws InterruptedException {
         var results = fibonacciCalculator.sequences(List.of(5, 6, 7));
         assertEquals("0,1,1,2,3", results.get(0));
         assertEquals("0,1,1,2,3,5", results.get(1));
